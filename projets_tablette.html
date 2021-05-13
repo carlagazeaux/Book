@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+        a:link { text-decoration:none; }
+        </style>
+        <style>
+        * { margin: 0; padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        /* mobile first */
+        article {
+            width: 100%;
+            float: left;
+            background: white;
+        }
+        #book{font-size: 60px;}
+        #nom{font-size: 40px;}
+        #bProjet{color:white;}
+        #bContact{color:white;}
+        #accueil{color:white;}
+        #projet{color:white;}
+        #contact{color:white;}
+
+
+        /* tablette */
+        @media only screen and (min-width: 600px) {
+              *{background: #B8FAA8;}
+              #book{text-align: center;
+                    font-size: 50px;
+                    background-color: #FFFFF4;}
+              #nom{text-align: center;
+                  font-size:30px;
+                  background-color: yellow;}
+              #haut{background-color:pink;}
+              #bAccueil{background-color:red;color:#FFFFF4;}
+              #bProjet{background-color:blue;color:#FFFFF4;}
+              #bContact{background-color: green;color:#FFFFF4;}
+              #projet{color:orange;font-size:1px;}
+              #contact{color:blue;}
+              #separation0{background-color: yellow; padding:10px;}
+              #separation{background-color: pink; padding:10px;}
+              #separation1{background-color: blue; padding:10px;}
+              #separation2{background-color: yellow; padding:10px;}
+
+              #bas{background-color:orange;
+                  display:flex; flex-direction:row;}
+              #blancG{background-color:red;width:0%;}
+              #contenu{background-color:blue;padding:0px;width:100%;
+                      display:flex; flex-direction:row; flex-wrap: wrap;}
+              #box1{background-color:#B8FAA8;font-size:20px;padding:0px;
+                    width:50%;}
+              #box10{background-color:#B8FAA8;font-size:20px;padding:10px;}
+              #box11{background-color:#B8FAA8;font-size:20px;padding:0px;}
+              #box110{background-color:#B8FAA8;font-size:20px;padding:10px;}
+              #box111{background-color:#B8FAA8;font-size:20px;padding:10px;}
+              #box2{background-color:#B8FAA8;font-size:20px;padding:0px;
+                    width:50%;}
+              #box20{background-color:#B8FAA8;font-size:20px;padding:0px;}
+              #box200{background-color:#B8FAA8;font-size:20px;padding:10px;}
+              #box201{background-color:#B8FAA8;font-size:20px;padding:10px;}
+              #box21{background-color:#B8FAA8;font-size:20px;padding:10px;}
+              #box3{background-color:#B8FAA8;font-size:20px;padding:10px;
+                    width:50%;}
+              #box30{background-color:#B8FAA8;font-size:20px;height:0px;}
+              #box31{background-color:#B8FAA8;font-size:20px;height:0px;}
+              #box32{background-color:#B8FAA8;font-size:20px;height:0px;}
+              #box4{background-color:#B8FAA8;font-size:20px;padding:10px;
+                    width:50%;}
+              #box5{background-color:#B8FAA8;font-size:20px;padding:10px;
+                    width:50%;}
+              #box50{background-color:#B8FAA8;font-size:20px;height:0px;}
+              #box51{background-color:#B8FAA8;font-size:20px;padding:0px;}
+              #box6{background-color:#B8FAA8;font-size:20px;padding:10px;
+                    width:50%;}
+              #CV{height:0px;width:0px;}
+        }
+
+
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="separation0"></div>
+        <div id="haut" >
+            <div id="vide1"></div>
+            <div id="titre">
+                <div id="book">BOOK </div>
+                <div id="nom">Carla Gazeaux</div>
+            </div>
+            <div id="vide2"></div>
+            <div id="bouttons">
+                <a href="projets.html">
+                    <div id="bProjet">Projets</div>
+                </a>
+                <a href="contact.html">
+                    <div id="bContact">Contact</div>
+                </a>
+            </div>
+
+        </div>
+        <div id="separation"></div>
+        <div id="separation1"></div>
+
+        <div id="bas">
+            <div id="blancG">
+                <div id="blanc"></div>
+                <div id="accueil"><p1>PROJETS</p1></div>
+            </div>
+            <div id="contenu">
+                      <div id="box1">
+                          <!-- horloges -->
+                          <div id="box10"> <img src="crane.jpg"/></div>
+                          <div id="box11">
+                              <div id="box110"><img src="crane.jpg"/></div>
+                              <!-- hawai -->
+                              <div id="box111"><img src="crane.jpg"/></div>
+                          </div>
+                      </div>
+                      <div id="box2">
+                          <div id="box20">
+                                  <div id="box200"><img src="crane.jpg"/></div>
+                                  <div id="box201"><img src="crane.jpg"/></div>
+                          </div>
+                          <div id="box21"><img src="crane.jpg"/></div>
+                      </div>
+                      <div id="box3">
+                          <div id="box30"><img src="crane.jpg"/></div>
+                          <div id="box31"><img src="crane.jpg"/></div>
+                          <div id="box32"><img src="crane.jpg"/></div>
+                        </div>
+                      <!-- animation musique -->
+                      <div id="box4"><img src="crane.jpg"/></div>
+                      <div id="box5">
+                          <div id="box50"><img src="crane.jpg"/></div>
+                          <div id="box51"><img src="crane.jpg"/></div>
+                      </div>
+                      <!-- poissons -->
+                      <div id="box6"><img src="crane.jpg"/></div>
+            </div>
+        </div>
+
+        <div id="separation2"></div>
+        <div id="separation3"></div>
+        <div id="CV"> <img src="CV.jpg"/></div>
+    </body>
+
+</html>
+
+<!-- <video width="640" height="482" controls>
+    <source src="vidéo_royan.mp4" type=video/mp4></video> -->

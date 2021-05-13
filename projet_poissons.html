@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+        a:link { text-decoration:none; }
+        </style>
+        <style>
+        * { margin: 0; padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        /* mobile first */
+        article {
+            width: 100%;
+            float: left;
+            background: white;
+        }
+        #book{font-size: 60px;}
+        #nom{font-size: 40px;}
+        #bProjet{color:white;}
+        #bContact{color:white;padding:0px; font-size:0px;}
+        #accueil{color:white;}
+        #projet{color:white;}
+        #contact{color:white;}
+
+
+        @media only screen and (min-width: 600px) {
+          *{background: #B8FAA8;}
+          #book{text-align: center;
+                font-size: 50px;
+                background-color: #FFFFF4;}
+          #nom{text-align: center;
+              font-size:30px;
+              background-color:#FFFFF4;}
+          #haut{background-color:#FFFFF4;}
+          #bProjet{background-color:#FFFFF4;color:#FFFFF4;}
+          #bContact{background-color: #FFFFF4;color:#FFFFF4;padding:0px;font-size:0px;}
+          #projet{color:orange;font-size:1px;}
+          #contact{color:blue;}
+          #separation0{background-color:#FFFFF4; padding:10px;}
+          #separation{background-color: #FFFFF4; padding:0px;}
+          #separation1{background-color:#FFFFF4; padding:10px;}
+          #separation2{background-color:#FFFFF4; padding:40px;}
+
+          #bas{background-color:orange; width:100%;
+              display:flex; flex-direction:row;}
+          #blancG{background-color:red;width:0%;}
+          #contenu{background-color:#B8FAA8;padding:10px;width:100%;
+                  display:flex; flex-direction:column;}
+
+
+        }
+
+        /* desktop */
+        @media only screen and (min-width: 1000px) {
+            div{display:flex; flex-direction:column;}
+
+            #separation0{background-color: #FFFFF4;padding:7px;}
+            #haut {background-color:#FFFFF4;
+                  flex-direction: row;
+                  flex-wrap: nowrap;
+                  height:15%;}
+            #vide1{width:13%;background-color:#FFFFF4;}
+            #titre{ width:17%;background-color:#FFFFF4;}
+            #book{ text-align: left; font-size:40px;background-color:#FFFFF4;}
+            #nom{ text-align: left; font-size:25px;background-color:#FFFFF4;}
+            #vide2{width:50%;background-color:#FFFFF4;}
+            #bouttons{background-color:#FFFFF4;font-size:20px; padding-right: 10px;
+                      flex-direction:row;
+                      flex-wrap: nowrap;
+                      justify-content: space-between;;
+                      align-items:flex-end;
+                      width:18%; text-decoration: none;
+                      }
+
+            #bProjet{background-color:#FFFFF4;color:black; width:100%;
+                    text-align:center;font-size:20px;
+                    border-width: 1px; border-style: double; border-color: black;
+            }
+            #bContact{background-color:#FFFFF4; color:black;width:100%;
+                    text-align:center;font-size:20px;
+                    border-width: 1px; border-style: double; border-color: black;
+            }
+
+            #separation{background-color: #FFFFF4;padding:7px;}
+            #separation1{background-color: #B8FAA8;padding:20px;}
+
+
+            #bas{background-color: #B8FAA8;
+                display:flex;
+                flex-direction:row;
+                justify-content: space-between;
+                height:85%;}
+            #blancG{width:8%; background-color: #B8FAA8;
+                display:flex;
+                flex-direction:column;}
+            #blanc{height:200px;}
+            p1{transform: rotate(270deg);
+              color:#FFFFF4;
+              font-size:60px;
+              justify-content:flex-start;}
+            #contenu{display:flex;
+                    flex-direction:column;
+                    width:87%; padding-right:10px;
+                    justify-content:space-between;
+            }
+            #projet{width:70%;
+                    border-width: 1px; border-style: double; border-color: black;}
+            #description{width:30%; margin-left:10px; color:black;}
+            #separation2{background-color: #B8FAA8;padding:10px;}
+
+            #separation3{background-color:#FFFFF4;padding:20px;}
+            video{width:100%;}
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="separation0"></div>
+        <div id="haut" >
+            <div id="vide1"></div>
+            <div id="titre">
+                <div id="book">BOOK </div>
+                <div id="nom">Carla Gazeaux</div>
+            </div>
+            <div id="vide2"></div>
+            <div id="bouttons">
+              <a href="projets.html">
+                  <div id="bProjet">Projets</div>
+              </a>
+              <a href="contact.html">
+                  <div id="bContact">Contact</div>
+              </a>
+            </div>
+
+        </div>
+        <div id="separation"></div>
+        <div id="separation1"></div>
+
+        <div id="bas">
+            <div id="blancG">
+                <div id="blanc"></div>
+                <div id="accueil"><p1>PROJETS</p1></div>
+            </div>
+            <div id="contenu">
+                <div id=projet>
+                    <video controls>
+                        <source src="poissons.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id=description>Programmation sur Processing</div>
+
+            </div>
+        </div>
+
+        <div id="separation2"></div>
+        <div id="separation3"></div>
+
+    </body>
+
+</html>

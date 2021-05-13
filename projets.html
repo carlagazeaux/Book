@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+        a:link { text-decoration:none; }
+        </style>
+        <style>
+        * { margin: 0; padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        /* mobile first */
+        article {
+            width: 100%;
+            float: left;
+            background: white;
+        }
+        #book{font-size: 60px;}
+        #nom{font-size: 40px;}
+        #bProjet{color:white;}
+        #bContact{color:white;padding:0px; font-size:0px;}
+        #accueil{color:white;}
+        #projet{color:white;}
+        #contact{color:white;}
+
+
+        /* tablette */
+        @media only screen and (min-width: 600px) {
+              *{background: #B8FAA8;}
+              #book{text-align: center;
+                    font-size: 50px;
+                    background-color: #FFFFF4;}
+              #nom{text-align: center;
+                  font-size:30px;
+                  background-color:#FFFFF4;}
+              #haut{background-color:#FFFFF4;}
+              #bProjet{background-color:#FFFFF4;color:#FFFFF4;}
+              #bContact{background-color: #FFFFF4;color:#FFFFF4;padding:0px;font-size:0px;}
+              #projet{color:orange;font-size:1px;}
+              #contact{color:blue;}
+              #separation0{background-color:#FFFFF4; padding:10px;}
+              #separation{background-color: #FFFFF4; padding:0px;}
+              #separation1{background-color:#FFFFF4; padding:10px;}
+              #separation2{background-color:#FFFFF4; padding:40px;}
+
+              #bas{background-color:#B8FAA8; width:100%;
+                  display:flex; flex-direction:row;}
+              #blancG{background-color:#B8FAA8;width:0%;}
+              #contenu{background-color:#B8FAA8;padding:0px;width:100%;
+                      display:flex; flex-direction:row;}
+              #box1{background-color:#B8FAA8;font-size:20px;padding:0px;
+                    width:100%; display:flex;flex-direction:row;}
+              #box10{background-color:#B8FAA8;font-size:20px;padding:10px;width:66.66%;
+                    display:flex; align-items: center;}
+              #box11{background-color:#B8FAA8;font-size:20px;
+                    padding:0px;width:33.33%;
+                    display:flex; flex-direction:column;}
+              #box110{background-color:#B8FAA8;font-size:20px;padding:10px;}
+              #box111{background-color:#B8FAA8;font-size:20px;padding:10px;}
+              #box2{background-color:#B8FAA8;font-size:20px;padding:0px;
+                    width:100%;display:flex;flex-direction:row;}
+              #box20{background-color:#B8FAA8;font-size:20px;padding:0px;width:33.33%;
+                    display:flex; flex-direction:column;}
+              #box200{background-color:#B8FAA8;font-size:20px;padding:10px;}
+              #box201{background-color:#B8FAA8;font-size:20px;padding:10px;}
+              #box21{background-color:#B8FAA8;font-size:20px;padding:10px;width:66.66%;
+                    display:flex; align-items: center;}
+              #box3{background-color:#B8FAA8;font-size:20px;padding:10px;
+                    width:100%;display:flex; flex-direction:row;}
+              #box30{background-color:#B8FAA8;font-size:20px;width:33.33%; padding:10px;}
+              #box31{background-color:#B8FAA8;font-size:20px;width:33.33%;padding:10px;}
+              #box32{background-color:#B8FAA8;font-size:20px;;width:33.33%;padding:10px;}
+              #box4{background-color:#B8FAA8;font-size:20px;padding:10px;
+                    width:100%;}
+              #box5et6{background-color:#B8FAA8; display:flex; flex-direction:row;}
+              #box5{background-color:#B8FAA8;font-size:20px;
+                    width:33.33%;display:flex;flex-direction:column;}
+              #box50{background-color:#B8FAA8;font-size:20px; padding:10px;}
+              #box51{background-color:#B8FAA8;font-size:20px;padding:10px;}
+              #box6{background-color:#B8FAA8;font-size:20px;padding:10px;
+                    width:66.66%;display:flex; align-items: center;}
+              #separation2{background-color:#B8FAA8;}
+              #separation3{background-color:#B8FAA8;}
+        }
+
+
+        /* ordi */
+        @media only screen and (min-width: 1000px) {
+            div{display:flex; flex-direction:column;}
+
+            #separation0{background-color: #FFFFF4;padding:7px;}
+            #haut {background-color:#FFFFF4;
+                  flex-direction: row;
+                  flex-wrap: nowrap;
+                  height:15%;}
+            #vide1{width:13%;background-color:#FFFFF4;}
+            #titre{ width:20%;background-color:#FFFFF4;}
+            #book{ text-align: left; font-size:40px;background-color:#FFFFF4;}
+            #nom{ text-align: left; font-size:25px;background-color:#FFFFF4;}
+            #vide2{width:50%;background-color:#FFFFF4;}
+            #bouttons{background-color:#FFFFF4;font-size:20px; padding-right: 10px;
+                      flex-direction:row;
+                      flex-wrap: nowrap;
+                      justify-content: space-between;;
+                      align-items:flex-end;
+                      width:18%; text-decoration: none;
+                      }
+
+            #bProjet{background-color:#FFFFF4;color:black; width:100%;
+                    text-align:center;font-size:20px;
+                    border-width: 1px; border-style: double; border-color: black;
+            }
+            #bContact{background-color:#FFFFF4; color:black;width:100%;
+                    text-align:center;font-size:20px;
+                    border-width: 1px; border-style: double; border-color: black;
+            }
+
+            #separation{background-color: #FFFFF4;padding:7px;}
+            #separation1{background-color: #B8FAA8;padding:20px;}
+
+
+            #bas{background-color: #B8FAA8;
+                display:flex;
+                flex-direction:row;
+                justify-content: space-between;
+                height:85%;}
+            #blancG{width:8%;background-color:#B8FAA8;
+                display:flex;
+                flex-direction:column;}
+            #blanc{height:210px;}
+            p1{transform: rotate(270deg);
+              color:#FFFFF4;
+              font-size:60px;
+              justify-content:flex-start;}
+            #contenu{background-color:#B8FAA8 ;
+                    display:flex;
+                    flex-direction:row;
+                    width:87%; padding-right:10px;
+                    justify-content:space-between;
+            }
+            #projet{width:100%;background-color:#B8FAA8;
+                    border-width: 1px; border-style: double; border-color: black;
+                    display:flex; flex-direction:row;
+                    flex-wrap:wrap;}
+            #box1{margin-left: -3px;font-size:20px; padding:0px;
+                  width:40%; height:60%;background-color:#B8FAA8;
+                  display:flex; flex-direction: column;}
+            #box10{height:66.66%; padding:0px;width:100%;background-color:#B8FAA8;}
+            #box11{height:33.33%;flex-direction:row; padding:0px;width:100%;background-color: blue;}
+            #box110{width:50%; padding:0px;width:100%;background-color:#B8FAA8;}
+            #box111{width:50%; padding:0px;width:100%;background-color: #B8FAA8;}
+
+            #box2{font-size:20px; padding:0px;background-color: #B8FAA8;
+                  width:40%;height:60%;
+                  display:flex; flex-direction: column;}
+            #box20{height: 33.33%;flex-direction:row; padding:0px;width:100%;background-color:#B8FAA8;}
+            #box200{width:50%; padding:0px;width:100%;background-color: #B8FAA8;}
+            #box201{width:50%; padding:0px;width:100%;background-color: #B8FAA8;}
+            #box21{height:66.66%; padding:0px;width:100%;background-color: #B8FAA8;}
+
+            #box3{font-size:20px; padding:0px; background-color:#B8FAA8;
+                  width:20%;height:60%;
+                  display:flex; flex-direction: column;}
+            #box30{height:33.33%; padding:0px;width:100%;background-color:#B8FAA8;}
+            #box31{height:33.33%; padding:0px;width:100%;background-color:#B8FAA8;}
+            #box32{height:33.33%; padding:0px;width:100%;background-color:#B8FAA8;}
+
+            #box4{font-size:20px; padding:0px; background-color:#B8FAA8;
+                  width:40%;height:40%;}
+
+            #box5et6{width:60%;height:40%;}
+            #box5{font-size:20px;padding:0px; background-color:#B8FAA8;
+                  width:33.33%;height:100%;}
+            #box50{height:50%;padding:0px;width:100%;background-color:#B8FAA8;}
+            #box51{width:50%;padding:0px;width:100%;background-color:#B8FAA8;}
+
+            #box6{font-size:20px;padding:0px; background-color:#B8FAA8;
+                  width:66.66%; height:100%;}
+            #separation2{background-color: #B8FAA8;padding:10px;}
+
+            #separation3{background-color:#FFFFF4;padding:20px;}
+            #CV{height:0px;width:0px;}
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="separation0"></div>
+        <div id="haut" >
+            <div id="vide1"></div>
+            <div id="titre">
+                <div id="book">BOOK </div>
+                <div id="nom">Carla Gazeaux</div>
+            </div>
+            <div id="vide2"></div>
+            <div id="bouttons">
+                <a href="projets.html">
+                    <div id="bProjet">Projets</div>
+                </a>
+                <a href="contact.html">
+                    <div id="bContact">Contact</div>
+                </a>
+            </div>
+
+        </div>
+        <div id="separation"></div>
+        <div id="separation1"></div>
+
+        <div id="bas">
+            <div id="blancG">
+                <div id="blanc"></div>
+                <div id="accueil"><p1>PROJETS</p1></div>
+            </div>
+            <div id="contenu">
+                <div id=projet> projets
+                      <div id="box1">
+                          <div id="box10">
+                              <a href="projet_horloges.html">
+                                  <div><img src="titre_horloges.jpg" /></div>
+                              </a>
+                          </div>
+                          <div id="box11">
+                              <div id="box110"><img src="los_angeles.jpg" /></div>
+                              <div id="box111"><img src="hawaii.jpg" /></div>
+                          </div>
+                      </div>
+                      <div id="box2">
+                          <div id="box20">
+                              <a href="projet_nu2.html">
+                                  <div id="box200"><img src="nu2.jpg" /></div>
+                              </a>
+                              <a href="projet_nu1.html">
+                                  <div id="box201"><img src="nu1.jpg" /></div>
+                              </a>
+                          </div>
+                          <div id="box21"><img src=" crane.jpg" /></div>
+                      </div>
+                      <div id="box3">
+                          <div id="box30"><img src="photo1.jpg" /></div>
+                          <div id="box31"><img src=" photo2.jpg" /></div>
+                          <div id="box32"><img src="photo7.jpg" /></div>
+                        </div>
+                      <!-- animation musique -->
+                      <div id="box4">
+                          <a href="projet_animation.html">
+                                <div><img src="animation.jpg" /></div>
+                          </a>
+                      </div>
+                      <div id="box5et6">
+                          <div id="box5">
+                              <div id="box50"><img src="Logo.jpg" /></div>
+                              <div id="box51"><img src="rough.jpg" /></div>
+                          </div>
+                          <div id="box6">
+                              <a href="projet_poissons.html">
+                                  <div><img src="poissons.jpg" /></div>
+                              </a>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="separation2"></div>
+        <div id="separation3"></div>
+        <div id="CV"> <img src="CV.jpg"/></div>
+    </body>
+
+</html>
+
+<!-- <video width="640" height="482" controls>
+    <source src="vidéo_royan.mp4" type=video/mp4></video> -->
